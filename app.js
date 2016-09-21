@@ -1,7 +1,7 @@
 'use strict';
 
-var answer1 = prompt('Is Michael a student in programming at Code Fellows?');
-answer1 = answer1.toLowerCase();
+var answer1 = prompt('Is Michael a student in programming at Code Fellows?').toLowerCase();
+// answer1 = answer1.toLowerCase();
 if (answer1 === 'yes' || answer1 === 'y') {
   alert('That\'s correct!');
   console.log('That\'s correct!');
