@@ -54,7 +54,12 @@ else {
   alert ('Sorry that\'s incorrect.');
   console.log('Sorry that\'s incorrect.');
 }
-/*var usertalent = prompt('What is your talent?');
+/*
+var username = prompt('What is your name?');
+alert('Hello, ' + username + '.');
+console.log('The user\'s name is ' + username);
+
+var usertalent = prompt('What is your talent?');
 alert('You must be gifted at ' + usertalent + '.');
 console.log('The user\'s talent is ' + usertalent);
 
