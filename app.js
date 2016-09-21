@@ -1,13 +1,13 @@
 'use strict';
 
-var answer1 = prompt('Is Michael a student in programming at Code Fellows?').toLowerCase();
+/*var answer1 = prompt('Is Michael a student in programming at Code Fellows?').toLowerCase();
 // answer1 = answer1.toLowerCase();
 if (answer1 === 'yes' || answer1 === 'y') {
   alert('That\'s correct!');
   console.log('That\'s correct!');
 }
 else {
-  alert ('Sorry that\'s incorrect.');
+  alert('Sorry that\'s incorrect.');
   console.log('Sorry that\'s incorrect.');
 }
 
@@ -18,7 +18,7 @@ if (answer2 === 'yes' || answer2 === 'y') {
   console.log('That\'s correct!');
 }
 else {
-  alert ('Sorry that\'s incorrect.');
+  alert('Sorry that\'s incorrect.');
   console.log('Sorry that\'s incorrect.');
 }
 
@@ -29,7 +29,7 @@ if (answer3 === 'no' || answer3 === 'n') {
   console.log('That\'s correct!');
 }
 else {
-  alert ('Sorry that\'s incorrect.');
+  alert('Sorry that\'s incorrect.');
   console.log('Sorry that\'s incorrect.');
 }
 
@@ -40,7 +40,7 @@ if (answer4 === 'no' || answer4 === 'n') {
   console.log('That\'s correct!');
 }
 else {
-  alert ('Sorry that\'s incorrect.');
+  alert('Sorry that\'s incorrect.');
   console.log('Sorry that\'s incorrect.');
 }
 
@@ -51,9 +51,33 @@ if (answer5 === 'maybe' || answer5 === 'm') {
   console.log('That\'s correct!');
 }
 else {
-  alert ('Sorry that\'s incorrect.');
+  alert('Sorry that\'s incorrect.');
   console.log('Sorry that\'s incorrect.');
 }
+
+/*Add a sixth question to my guessing game that takes numeric input by prompting a user to guess a number (for instance, "What is my favorite number?" or "How many Pokémon did I catch yesterday?"), and indicates to the user whether the guess is 'too high' or 'too low', and gives the user exactly four opportunities to get the correct answer, so that my fancy programming skills are showcased.*/
+for (var i = 0; i <= 3; i++) {
+    var guess = parseInt(prompt('What is my favorite number?'));
+    if (guess == 7) {
+      alert('That\'s correct!');
+      console.log('That\'s correct!');
+      break;
+  } else if (guess < 7) {
+      alert('Sorry that\'s too low. Try Again.');
+      console.log('Sorry that\'s too low.');
+  } else if (guess > 7) {
+      alert('Sorry that\'s too high. Try Again.');
+      console.log('Sorry that\'s too high. Try Again.');
+  }
+}
+/*add a seventh question to my guessing game that has multiple possible correct answers that are stored in an array. For instance, "Can you guess a state that I have lived in besides Washington?", so that even more of my programming skills are showcased. For now, I will structure this question so that the user has six tries to get a single correct answer, and upon using up those tries OR getting a correct answer, displays a message to the user indicating all of the possible correct answers.*/
+
+
+
+
+
+
+
 /*
 var username = prompt('What is your name?');
 alert('Hello, ' + username + '.');
