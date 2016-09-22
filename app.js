@@ -1,6 +1,6 @@
 'use strict';
 
-/*var answer1 = prompt('Is Michael a student in programming at Code Fellows?').toLowerCase();
+var answer1 = prompt('Is Michael a student in programming at Code Fellows?').toLowerCase();
 // answer1 = answer1.toLowerCase();
 if (answer1 === 'yes' || answer1 === 'y') {
   alert('That\'s correct!');
@@ -56,8 +56,8 @@ else {
 }
 
 /*Add a sixth question to my guessing game that takes numeric input by prompting a user to guess a number (for instance, "What is my favorite number?" or "How many Pokémon did I catch yesterday?"), and indicates to the user whether the guess is 'too high' or 'too low', and gives the user exactly four opportunities to get the correct answer, so that my fancy programming skills are showcased.*/
-/*for (var x = 0; x <= 3; x++) {
-    var guessNum = parseInt(prompt('What is my favorite number?'));
+for (var x = 0; x <= 3; x++) {
+    var guessNum = parseInt(prompt('What is Michael\'s favorite number?'));
     if (guessNum === 7) {
       alert('That\'s correct!');
       console.log('That\'s correct!');
@@ -72,9 +72,11 @@ else {
 }
 /*add a seventh question to my guessing game that has multiple possible correct answers that are stored in an array. For instance, "Can you guess a state that I have lived in besides Washington?", so that even more of my programming skills are showcased. For now, I will structure this question so that the user has six tries to get a single correct answer, and upon using up those tries OR getting a correct answer, displays a message to the user indicating all of the possible correct answers.*/
 for (var y = 0; y <= 6; y++) {
-  var answerState = prompt('Can you guess a state that I have lived in besides Washington?').toLowerCase();
-  var statesLived = ['illinois', 'new york', 'virgnia'];
-  var correctAnswer = false;
+
+var answerState = prompt('Can you guess a state that Michael has lived in besides Washington?').toLowerCase();
+var statesLived = ['illinois', 'new york', 'virginia'];
+var correctAnswer = false;
+
   for (var z = 0; z < statesLived.length; z++) {
     if (answerState === statesLived[z]) {
       correctAnswer = true;
@@ -90,7 +92,9 @@ for (var y = 0; y <= 6; y++) {
     console.log('Try Again.');
   }
 }
-alert('I have lived in ' + statesLived + '.');
+alert('I have lived in Illinois, New York, and Virginia.');
+
+/*keep a tally of the total number of correct answers given by the user, and at the end of the game, tell the user how well they did with a personalized custom message that includes the number of correct answers and also addresses the user by name, e.g. "You got 4 out of 7 questions correct, Bobbi! Better luck next time."*/
 
 
 
