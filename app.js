@@ -101,11 +101,15 @@ var correctAnswer = false;
     console.log('Try Again.');
   }
 }
-alert('Michael has lived in Illinois, New York, and Virginia. Your final score is ' + score + '/7.');
 
 /*keep a tally of the total number of correct answers given by the user, and at the end of the game, tell the user how well they did with a personalized custom message that includes the number of correct answers and also addresses the user by name, e.g. "You got 4 out of 7 questions correct, Bobbi! Better luck next time."*/
-
+alert('Michael has lived in Illinois, New York, and Virginia. Your final score is ' + score + '/7.');
 console.log('The user\'s score is ' + score + '/7.');
+
+
+
+
+
 
 
 
