@@ -1,9 +1,12 @@
 'use strict';
+// keeping score
+var score = 0;
 
 var answer1 = prompt('Is Michael a student in programming at Code Fellows?').toLowerCase();
 // answer1 = answer1.toLowerCase();
 if (answer1 === 'yes' || answer1 === 'y') {
   alert('That\'s correct!');
+  score = score + 1;
   console.log('That\'s correct!');
 }
 else {
@@ -15,6 +18,7 @@ var answer2 = prompt('Does Michael practice writing code on a Macbook Pro?');
 answer2 = answer2.toLowerCase();
 if (answer2 === 'yes' || answer2 === 'y') {
   alert('That\'s correct!');
+  score = score + 1;
   console.log('That\'s correct!');
 }
 else {
@@ -26,6 +30,7 @@ var answer3 = prompt('Currently, can Michael build a complex website?');
 answer3 = answer3.toLowerCase();
 if (answer3 === 'no' || answer3 === 'n') {
   alert('That\'s correct!');
+  score = score + 1;
   console.log('That\'s correct!');
 }
 else {
@@ -37,6 +42,7 @@ var answer4 = prompt('Has Michael had any prior experience writing code?');
 answer4 = answer4.toLowerCase();
 if (answer4 === 'no' || answer4 === 'n') {
   alert('That\'s correct!');
+  score = score + 1;
   console.log('That\'s correct!');
 }
 else {
@@ -48,6 +54,7 @@ var answer5 = prompt('Will Michael pass Code Fellows 201 course? (Yes, No, or Ma
 answer5 = answer5.toLowerCase();
 if (answer5 === 'maybe' || answer5 === 'm') {
   alert('That\'s correct!');
+  score = score + 1;
   console.log('That\'s correct!');
 }
 else {
@@ -60,6 +67,7 @@ for (var x = 0; x <= 3; x++) {
     var guessNum = parseInt(prompt('What is Michael\'s favorite number?'));
     if (guessNum === 7) {
       alert('That\'s correct!');
+      score = score + 1;
       console.log('That\'s correct!');
       break;
   } else if (guessNum < 7) {
@@ -86,16 +94,18 @@ var correctAnswer = false;
   if (correctAnswer === true) {
     alert('That\'s correct!');
     console.log('That\'s correct!');
+    score = score + 1;
     break;
   } else if (y <= 6){
     alert('Try Again.');
     console.log('Try Again.');
   }
 }
-alert('I have lived in Illinois, New York, and Virginia.');
+alert('Michael has lived in Illinois, New York, and Virginia. Your final score is ' + score + '/7.');
 
 /*keep a tally of the total number of correct answers given by the user, and at the end of the game, tell the user how well they did with a personalized custom message that includes the number of correct answers and also addresses the user by name, e.g. "You got 4 out of 7 questions correct, Bobbi! Better luck next time."*/
 
+console.log('The user\'s score is ' + score + '/7.');
 
 
 
