@@ -1,20 +1,101 @@
-h1 {
-	font-family: sans-serif;;
-	font-weight: bold;
-	text-align: center;
-	padding-top: 25px;
-	padding-bottom: 25px;
-	color: #000000;
-}
-
 body {
-  font-family: sans-serif;
-  text-align: justify;
+	width: 90%;
+	margin: 0 auto;
+	text-align: center;
+	font-family: sans-serif;
 }
 
 img {
+	color: white;
 	height: 170px;
 	width: 170px;
-  display: block;
-  margin: auto;
+	display: block;
+	margin: auto;
 }
+
+#content {overflow: auto;}
+
+#nav, #feature, #footer {
+	margin: 1%;
+}
+
+.column1, .column2, .column3 {
+		width: 31.3%;
+		float: left;
+		margin: 1%;
+}
+
+.column3 {
+	margin-right: 0%;
+}
+
+li {
+	display: inline;
+	padding: 0.5em;
+}
+
+#nav, #footer {
+	background-color: #efefef;
+	padding: 0.5em 0;
+}
+
+#feature, .article {
+	height: 10em;
+	margin-bottom: 1em;
+	background-color: #efefef;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*html {
+background-color: black;
+}
+h1 {
+font-family: sans-serif;
+font-weight: bold;
+text-align: center;
+padding-top: 25px;
+padding-bottom: 25px;
+color: white;
+}
+
+body {
+font-family: sans-serif;
+text-align: justify;
+color: white;
+}
+
+
+div {
+font-size: 85%;
+width: 250px;
+height: 300px;
+margin: 10px auto 10px auto;
+padding: 20px;
+border: 1px solid blue
+}*/
