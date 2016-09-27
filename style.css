@@ -5,15 +5,23 @@ body {
 	font-family: sans-serif;
 }
 
-img {
+.toad {
 	color: white;
-	height: 170px;
-	width: 170px;
+	height: 10em;
+	width: 10em;
 	display: block;
 	margin: auto;
 }
 
-#content {overflow: auto;}
+.citySkyline {
+	height: 10em;
+	width: 69.75em;
+
+}
+
+#content {overflow: auto;
+color: #EE9A00;
+}
 
 #nav, #feature, #footer {
 	margin: 1%;
@@ -37,6 +45,18 @@ li {
 #nav, #footer {
 	background-color: #efefef;
 	padding: 0.5em 0;
+}
+a:link {
+    text-decoration: none;
+    color: #008B45;
+}
+
+a:hover {
+    color: black;
+}
+
+a:visited {
+    color: #EE9A00;
 }
 
 #feature, .article {
